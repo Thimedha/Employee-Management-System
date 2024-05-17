@@ -1,0 +1,147 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Net.Mail;
+using System.Net;
+
+namespace Employee_Management_System
+{
+    public partial class Employee_Details : Form
+    {
+        public Employee_Details()
+        {
+            InitializeComponent();
+            SqlConnection cnn = new SqlConnection(@"Data Source=DESKTOP-THAS7GN\SQLEXPRESS;Initial Catalog=finexengineering.lk;Integrated Security=True");
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you really want to exit this system?", "Application Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 obj = new Form1();
+            obj.Show();
+        }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu obj = new MainMenu();
+            obj.Show();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+            string FirstName = txtFName.Text;
+            string LastName = txtLName.Text;
+            string DateOfBirth = dtpDateOfBirth.Text;
+                string Gender;
+                if (rdbMale.Checked)
+                {
+                    Gender = "Male";
+                }
+                else
+                {
+                    Gender = "Female";
+                }
+                string MaritalStatus;
+                if (rdbMarried.Checked)
+                {
+                    MaritalStatus = "Married";
+                }
+                else
+                {
+                    MaritalStatus = "Unmarried";
+                }
+            int ContactNumber = int.Parse(txtContactNo.Text);
+            string Address = txtAddress.Text;
+            string EmailAddress = txtEmail.Text;
+            string Department = cmbDepartment.Text;
+
+                //sql query
+            string query_insert = "insert into finexengineering.lk values('" + FirstName + "','" + LastName + "','" + DateOfBirth + "','" + Gender + "','" + MaritalStatus + "','" + ContactNumber + "','" + Address + "','" + EmailAddress + "','" + Department + "',)";
+            SqlCommand cmd = new SqlCommand(query_insert);
+            cnn.open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Saved Successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while saving" + ex);
+            }
+            finally
+            {
+                //closing the connection
+                cnn.close();
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string updatesql = "update finexengineering.lk set FirstName ='" + FirstName + "',LastName='" + LastName + "',DateOfBirth'" + DateOfBirth + "',Gender'" + Gender + "',MaritalStatus'" + MaritalStatus + "',ContactNumber'" + ContactNumber + "',Address'" + Address + "',EmailAddress'" + EmailAddress + "',Department'" + Department + "'where EmployeeID='" + EmployeeID + "')";
+        }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string deletesql = "delete finexengineering.lk where EmployeeID='" + EmployeeID + "'";
+        }
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string EmployeeID = txtSearchEID.Text;
+                string query_search = "SELECT * FROM finexengineering.lk WHERE EmployeeID = '" + EmployeeID + "'";
+                SqlCommand cmd = new SqlCommand(query_search);
+                SqlDataReader r = cmd.ExecuteReader();
+                while (r.Read())
+                {
+                    txtFName.Text = r[1].ToString();
+                    txtLName.Text = r[2].ToString();
+                    dtpDateOfBirth.Text = r[3].ToString();
+                    if (Gender == "Male")
+                    {
+                        rdbMale.Checked = true;
+                    }
+                    else
+                    {
+                        rdbFemale.Checked = true;
+                    }
+                    if (MaritalStatus == "Married")
+                    {
+                        rdbMarried.Checked = true;
+                    }
+                    else
+                    {
+                        rdbUnmarried.Checked = true;
+                    }
+                    txtContactNo.Text = r[4].ToString();
+                    txtAddress.Text = r[5].ToString();
+                    txtEmail.Text = r[6].ToString();
+                    cmbDepartment.Text = r[7].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+
+            }
+        }
+    }
+}
