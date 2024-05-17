@@ -1,0 +1,28 @@
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\bin\Debug\Employee Management System.exe.config
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\bin\Debug\Employee Management System.exe
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\bin\Debug\Employee Management System.pdb
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee Management System.csproj.AssemblyReference.cache
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee Management System.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.Form1.resources
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.Properties.Resources.resources
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee Management System.csproj.GenerateResource.cache
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee Management System.csproj.CoreCompileInputs.cache
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee Management System.exe
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee Management System.pdb
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.MainMenu.resources
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.Employee_Details.resources
+C:\Users\Gayathri\Desktop\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.Salary.resources
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\bin\Debug\Employee Management System.exe.config
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\bin\Debug\Employee Management System.exe
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\bin\Debug\Employee Management System.pdb
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee Management System.csproj.AssemblyReference.cache
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee Management System.csproj.SuggestedBindingRedirects.cache
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.Employee_Details.resources
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.Form1.resources
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.MainMenu.resources
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.Properties.Resources.resources
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee_Management_System.Salary.resources
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee Management System.csproj.GenerateResource.cache
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee Management System.csproj.CoreCompileInputs.cache
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee Management System.exe
+C:\Users\White Devil\Desktop\New folder\Employee Management System\Employee Management System\obj\Debug\Employee Management System.pdb
